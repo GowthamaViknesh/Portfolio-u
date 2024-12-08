@@ -1,5 +1,4 @@
 import { RiMedal2Line } from "react-icons/ri";
-import rightimage from "../assets/pro-2.jpg";
 import avatar1 from "../assets/Avatarw.avif";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { GiRoundStar } from "react-icons/gi";
