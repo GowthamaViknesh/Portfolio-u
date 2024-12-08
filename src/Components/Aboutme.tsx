@@ -1,5 +1,6 @@
 import { RiMedal2Line } from "react-icons/ri";
 import rightimage from "../assets/pro-2.jpg";
+import avatar1 from "../assets/Avatarw.avif";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { GiRoundStar } from "react-icons/gi";
 import { motion } from "framer-motion";
@@ -22,7 +23,7 @@ const Aboutme = () => {
             {/* Left side: Image */}
             <div className="flex justify-center items-center">
               <img
-                src={rightimage}
+                src={avatar1}
                 alt="Gowthama Viknesh K"
                 className="w-full max-w-[300px] md:max-w-[360px] h-[400px] md:h-[530px] object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
               />

@@ -1,6 +1,7 @@
 import { ArrowDownFromLine, Hand, Loader } from "lucide-react";
 import profilePicture from "../assets/pro-2.jpg";
 import { useEffect, useState } from "react";
+import avatar from "../assets/Avatar.avif";
 import { motion } from "framer-motion";
 import fadeIn from "../variants";
 
@@ -29,7 +30,7 @@ const Hero = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center items-center lg:order-2">
-            <img src={profilePicture}
+            <img src={avatar}
               alt="Gowthama Viknesh K"
               width={400}
               height={400}
@@ -43,7 +44,7 @@ const Hero = () => {
               <Hand className="animate-wave" />
             </div>
 
-            <h2 className="text-[1.7rem] md:text-2xl lg:text-5xl font-bold -tracking-normal mb-4 lg:text-red-400">
+            <h2 className="text-[1.7rem] md:text-1xl lg:text-5xl font-bold -tracking-normal mb-4 lg:text-red-400">
               Gowthama Viknesh K
             </h2>
 
