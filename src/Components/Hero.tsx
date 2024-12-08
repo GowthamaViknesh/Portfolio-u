@@ -1,5 +1,4 @@
 import { ArrowDownFromLine, Hand, Loader } from "lucide-react";
-import profilePicture from "../assets/pro-2.jpg";
 import { useEffect, useState } from "react";
 import avatar from "../assets/Avatar.avif";
 import { motion } from "framer-motion";
