@@ -3,6 +3,8 @@ import Gold from "../assets/Gold.png";
 import Chat from "../assets/chat.png";
 import ECom from "../assets/E-come.png";
 import blogs from "../assets/blogs.png";
+import { motion } from "framer-motion";
+import fadeIn from "../variants";
 
 const mernProjects = [
   {
@@ -45,55 +47,64 @@ const mernProjects = [
 
 const Mern = () => {
   return (
-    <div className="text-white py-12">
-      <div className="container mx-auto px-4">
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mernProjects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
-            >
-              <img
-                src={project.img}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                <p className="text-gray-400 mb-6">{project.description}</p>
-                <div className="flex justify-between flex-wrap gap-4">
-                  <a
-                    href={project.frontendLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 flex items-center gap-2 hover:text-blue-300"
-                  >
-                    <FaCode /> FrontEnd
-                  </a>
-                  <a
-                    href={project.backendLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-500 flex items-center gap-2 hover:text-green-300"
-                  >
-                    <FaCode /> BackEnd
-                  </a>
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-yellow-500 flex items-center gap-2 hover:text-yellow-300"
-                  >
-                    <FaGlobe /> Website
-                  </a>
+    <>
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+      >
+        <div className="text-white py-12">
+          <div className="container mx-auto px-4">
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {mernProjects.map((project, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+                >
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                    <p className="text-gray-400 mb-6">{project.description}</p>
+                    <div className="flex justify-between flex-wrap gap-4">
+                      <a
+                        href={project.frontendLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 flex items-center gap-2 hover:text-blue-300"
+                      >
+                        <FaCode /> FrontEnd
+                      </a>
+                      <a
+                        href={project.backendLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-green-500 flex items-center gap-2 hover:text-green-300"
+                      >
+                        <FaCode /> Github
+                      </a>
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 flex items-center gap-2 hover:text-yellow-300"
+                      >
+                        <FaGlobe /> Website
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </>
   );
 };
 
