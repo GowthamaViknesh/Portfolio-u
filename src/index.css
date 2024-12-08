@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1f1d1d;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* .animate-scroll {
+  animation: scroll 40s linear infinite;
+} */
+
+.card {
+  perspective: 1000px; /* Enables 3D effect */
+}
+
+.card__content {
+  transform-style: preserve-3d; /* Preserves 3D space for flipping */
+}
+
+.card__front,
+.card__back {
+  backface-visibility: hidden; /* Hides the back side when facing front */
+}
+
+.card__back {
+  transform: rotateY(180deg); /* Rotates the back side */
+}
+
+.card:hover .card__content {
+  transform: rotateY(180deg); 
+}
