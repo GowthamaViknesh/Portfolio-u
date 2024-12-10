@@ -62,7 +62,7 @@ const Hero = () => {
 
             <div className="flex justify-center lg:justify-start">
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/13qli4s8wyquM09EX_4P-Wnz_WdToZtpj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
