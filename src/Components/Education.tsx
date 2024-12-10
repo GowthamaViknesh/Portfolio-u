@@ -39,7 +39,7 @@ const Education = () => {
                 <p className="text-base mb-2">State Board</p>
                 <p className="mb-2 text-gray-400">2017 - 2020</p>
                 <p className="mb-2">T.R.H.S School Coimbatore, Pollachi</p>
-                <p>CGPA : 6.2%</p>
+                <p>CGPA : 8.2%</p>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ const Education = () => {
                 <p className="text-base mb-2">Computer Science</p>
                 <p className="mb-2 text-gray-400">2016 - 2017</p>
                 <p className="mb-2">T.R.H.S School Coimbatore, Pollachi</p>
-                <p>CGPA : 6.2%</p>
+                <p>CGPA : 6.8%</p>
               </div>
             </div>
           </div>
